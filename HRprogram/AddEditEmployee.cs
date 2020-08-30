@@ -56,7 +56,7 @@ namespace HRprogram
             _employeeId = studentWithHigherId == null ?
                 1 : studentWithHigherId.Id + 1;
         }
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btCancel_Click(object sender, EventArgs e)
         {
             Close();
         }

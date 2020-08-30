@@ -47,6 +47,7 @@
             this.btAdd.TabIndex = 0;
             this.btAdd.Text = "Dodaj";
             this.btAdd.UseVisualStyleBackColor = false;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // btEdit
             // 
@@ -57,6 +58,7 @@
             this.btEdit.TabIndex = 1;
             this.btEdit.Text = "Edytuj";
             this.btEdit.UseVisualStyleBackColor = false;
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
             // btFire
             // 
@@ -67,6 +69,7 @@
             this.btFire.TabIndex = 2;
             this.btFire.Text = "Zwolnij";
             this.btFire.UseVisualStyleBackColor = false;
+            this.btFire.Click += new System.EventHandler(this.btFire_Click);
             // 
             // btDelate
             // 
@@ -77,6 +80,7 @@
             this.btDelate.TabIndex = 3;
             this.btDelate.Text = "Usuń";
             this.btDelate.UseVisualStyleBackColor = false;
+            this.btDelate.Click += new System.EventHandler(this.btDelate_Click);
             // 
             // cbbFilter
             // 
@@ -103,6 +107,7 @@
             this.btRefresh.TabIndex = 6;
             this.btRefresh.Text = "Odświerz";
             this.btRefresh.UseVisualStyleBackColor = false;
+            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
             // Main
             // 

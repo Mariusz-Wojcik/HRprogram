@@ -168,6 +168,7 @@
             this.btConfirm.TabIndex = 14;
             this.btConfirm.Text = "Zatwierdź";
             this.btConfirm.UseVisualStyleBackColor = false;
+            this.btConfirm.Click += new System.EventHandler(this.btConfirm_Click);
             // 
             // btCancel
             // 
@@ -178,6 +179,7 @@
             this.btCancel.TabIndex = 15;
             this.btCancel.Text = "Anuluj";
             this.btCancel.UseVisualStyleBackColor = false;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // AddEditEmployee
             // 

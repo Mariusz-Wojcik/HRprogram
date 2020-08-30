@@ -11,9 +11,9 @@ namespace HRprogram
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime HireDate { get; set; }
-        public DateTime FireDate { get; set; }
+        public string HireDate { get; set; }
+        public string FireDate { get; set; }
         public int Salary { get; set; }
-        public string Comments { get; set; }
+        public string Remarks { get; set; }
     }
 }

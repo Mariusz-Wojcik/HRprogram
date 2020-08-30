@@ -16,5 +16,31 @@ namespace HRprogram
         {
             InitializeComponent();
         }
+
+        private void btAdd_Click(object sender, EventArgs e)
+        {
+            var addEditEmployee = new AddEditEmployee();
+            addEditEmployee.ShowDialog();
+        }
+
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btFire_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btDelate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btRefresh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

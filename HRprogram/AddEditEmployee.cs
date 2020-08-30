@@ -34,12 +34,6 @@ namespace HRprogram
 
             Close();
         }
-
-        private void btCancel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddNewUserToList(List<Employee> employees)
         {
             var employee = new Employee

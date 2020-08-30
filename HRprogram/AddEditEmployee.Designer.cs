@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbId = new System.Windows.Forms.TextBox();
+            this.tbFirstName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbLastName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbHireDate = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbFireDate = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbSalary = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.rtbRemarks = new System.Windows.Forms.RichTextBox();
+            this.btConfirm = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,19 +55,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Id pracownika:";
             // 
-            // textBox1
+            // tbId
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbId.Location = new System.Drawing.Point(141, 39);
+            this.tbId.Name = "tbId";
+            this.tbId.Size = new System.Drawing.Size(196, 20);
+            this.tbId.TabIndex = 1;
             // 
-            // textBox2
+            // tbFirstName
             // 
-            this.textBox2.Location = new System.Drawing.Point(141, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 20);
-            this.textBox2.TabIndex = 3;
+            this.tbFirstName.Location = new System.Drawing.Point(141, 65);
+            this.tbFirstName.Name = "tbFirstName";
+            this.tbFirstName.Size = new System.Drawing.Size(196, 20);
+            this.tbFirstName.TabIndex = 3;
             // 
             // label2
             // 
@@ -78,12 +78,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Imię:";
             // 
-            // textBox3
+            // tbLastName
             // 
-            this.textBox3.Location = new System.Drawing.Point(141, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 20);
-            this.textBox3.TabIndex = 5;
+            this.tbLastName.Location = new System.Drawing.Point(141, 91);
+            this.tbLastName.Name = "tbLastName";
+            this.tbLastName.Size = new System.Drawing.Size(196, 20);
+            this.tbLastName.TabIndex = 5;
             // 
             // label3
             // 
@@ -94,12 +94,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Nazwisko:";
             // 
-            // textBox4
+            // tbHireDate
             // 
-            this.textBox4.Location = new System.Drawing.Point(141, 117);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 20);
-            this.textBox4.TabIndex = 7;
+            this.tbHireDate.Location = new System.Drawing.Point(141, 117);
+            this.tbHireDate.Name = "tbHireDate";
+            this.tbHireDate.Size = new System.Drawing.Size(196, 20);
+            this.tbHireDate.TabIndex = 7;
             // 
             // label4
             // 
@@ -110,12 +110,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Data zatrudnienia:";
             // 
-            // textBox5
+            // tbFireDate
             // 
-            this.textBox5.Location = new System.Drawing.Point(141, 143);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(196, 20);
-            this.textBox5.TabIndex = 9;
+            this.tbFireDate.Location = new System.Drawing.Point(141, 143);
+            this.tbFireDate.Name = "tbFireDate";
+            this.tbFireDate.Size = new System.Drawing.Size(196, 20);
+            this.tbFireDate.TabIndex = 9;
             // 
             // label5
             // 
@@ -126,12 +126,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Data zwolnienia:";
             // 
-            // textBox6
+            // tbSalary
             // 
-            this.textBox6.Location = new System.Drawing.Point(141, 169);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(196, 20);
-            this.textBox6.TabIndex = 11;
+            this.tbSalary.Location = new System.Drawing.Point(141, 169);
+            this.tbSalary.Name = "tbSalary";
+            this.tbSalary.Size = new System.Drawing.Size(196, 20);
+            this.tbSalary.TabIndex = 11;
             // 
             // label6
             // 
@@ -151,54 +151,54 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Uwagi:";
             // 
-            // richTextBox1
+            // rtbRemarks
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(141, 195);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(196, 96);
-            this.richTextBox1.TabIndex = 13;
-            this.richTextBox1.Text = "";
+            this.rtbRemarks.Location = new System.Drawing.Point(141, 195);
+            this.rtbRemarks.Name = "rtbRemarks";
+            this.rtbRemarks.Size = new System.Drawing.Size(196, 96);
+            this.rtbRemarks.TabIndex = 13;
+            this.rtbRemarks.Text = "";
             // 
-            // button1
+            // btConfirm
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(141, 325);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Zatwierdź";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btConfirm.Location = new System.Drawing.Point(141, 325);
+            this.btConfirm.Name = "btConfirm";
+            this.btConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btConfirm.TabIndex = 14;
+            this.btConfirm.Text = "Zatwierdź";
+            this.btConfirm.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btCancel
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button2.Location = new System.Drawing.Point(262, 325);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Anuluj";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btCancel.Location = new System.Drawing.Point(262, 325);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(75, 23);
+            this.btCancel.TabIndex = 15;
+            this.btCancel.Text = "Anuluj";
+            this.btCancel.UseVisualStyleBackColor = false;
             // 
             // AddEditEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 366);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.btConfirm);
+            this.Controls.Add(this.rtbRemarks);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.tbSalary);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbFireDate);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbHireDate);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbLastName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbFirstName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbId);
             this.Controls.Add(this.label1);
             this.Name = "AddEditEmployee";
             this.Text = "AddEditEmployee";
@@ -210,20 +210,20 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbId;
+        private System.Windows.Forms.TextBox tbFirstName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbLastName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbHireDate;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbFireDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbSalary;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RichTextBox rtbRemarks;
+        private System.Windows.Forms.Button btConfirm;
+        private System.Windows.Forms.Button btCancel;
     }
 }

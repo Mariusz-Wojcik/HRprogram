@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btAdd = new System.Windows.Forms.Button();
+            this.btEdit = new System.Windows.Forms.Button();
+            this.btFire = new System.Windows.Forms.Button();
+            this.btDelate = new System.Windows.Forms.Button();
+            this.cbbFilter = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btAdd
             // 
-            this.button1.BackColor = System.Drawing.Color.YellowGreen;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Dodaj";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btAdd.BackColor = System.Drawing.Color.YellowGreen;
+            this.btAdd.Location = new System.Drawing.Point(12, 12);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(75, 23);
+            this.btAdd.TabIndex = 0;
+            this.btAdd.Text = "Dodaj";
+            this.btAdd.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btEdit
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(93, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Edytuj";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btEdit.BackColor = System.Drawing.Color.Yellow;
+            this.btEdit.Location = new System.Drawing.Point(93, 12);
+            this.btEdit.Name = "btEdit";
+            this.btEdit.Size = new System.Drawing.Size(75, 23);
+            this.btEdit.TabIndex = 1;
+            this.btEdit.Text = "Edytuj";
+            this.btEdit.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btFire
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
-            this.button3.Location = new System.Drawing.Point(174, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Zwolnij";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btFire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
+            this.btFire.Location = new System.Drawing.Point(174, 12);
+            this.btFire.Name = "btFire";
+            this.btFire.Size = new System.Drawing.Size(75, 23);
+            this.btFire.TabIndex = 2;
+            this.btFire.Text = "Zwolnij";
+            this.btFire.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btDelate
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(255, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Usuń";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btDelate.BackColor = System.Drawing.Color.Red;
+            this.btDelate.Location = new System.Drawing.Point(255, 12);
+            this.btDelate.Name = "btDelate";
+            this.btDelate.Size = new System.Drawing.Size(75, 23);
+            this.btDelate.TabIndex = 3;
+            this.btDelate.Text = "Usuń";
+            this.btDelate.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cbbFilter
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(336, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cbbFilter.FormattingEnabled = true;
+            this.cbbFilter.Location = new System.Drawing.Point(336, 12);
+            this.cbbFilter.Name = "cbbFilter";
+            this.cbbFilter.Size = new System.Drawing.Size(121, 21);
+            this.cbbFilter.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -94,28 +94,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 397);
             this.dataGridView1.TabIndex = 5;
             // 
-            // button5
+            // btRefresh
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(463, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Odświerz";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btRefresh.Location = new System.Drawing.Point(463, 12);
+            this.btRefresh.Name = "btRefresh";
+            this.btRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btRefresh.TabIndex = 6;
+            this.btRefresh.Text = "Odświerz";
+            this.btRefresh.UseVisualStyleBackColor = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btRefresh);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cbbFilter);
+            this.Controls.Add(this.btDelate);
+            this.Controls.Add(this.btFire);
+            this.Controls.Add(this.btEdit);
+            this.Controls.Add(this.btAdd);
             this.Name = "Main";
             this.Text = "Kadry";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -125,13 +125,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btAdd;
+        private System.Windows.Forms.Button btEdit;
+        private System.Windows.Forms.Button btFire;
+        private System.Windows.Forms.Button btDelate;
+        private System.Windows.Forms.ComboBox cbbFilter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btRefresh;
     }
 }
 

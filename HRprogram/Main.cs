@@ -15,8 +15,9 @@ namespace HRprogram
         private FileHelper<List<Employee>> _fileHelper = new FileHelper<List<Employee>>(Program.FilePath);
         public Main()
         {
-            InitializeComponent();
+            InitializeComponent();           
             RefreshDiary();
+            SetColumnHeader();
         }
 
         private void RefreshDiary()
@@ -48,7 +49,19 @@ namespace HRprogram
 
         private void btRefresh_Click(object sender, EventArgs e)
         {
-
+            RefreshDiary();
         }
+
+        private void SetColumnHeader()
+        {
+            dgvMain.Columns[0].HeaderText = "Numer pracownika";
+            dgvMain.Columns[1].HeaderText = "Imię";
+            dgvMain.Columns[2].HeaderText = "Nazwisko";
+            dgvMain.Columns[3].HeaderText = "Data zatrudnienia";
+            dgvMain.Columns[4].HeaderText = "Data zwolnienia";
+            dgvMain.Columns[5].HeaderText = "Pensja";
+            dgvMain.Columns[6].HeaderText = "Uwagi";
+        }
+
     }
 }

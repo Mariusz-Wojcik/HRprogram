@@ -26,10 +26,18 @@ namespace HRprogram
             dgvMain.DataSource = employees;
         }
 
+
+
         private void btAdd_Click(object sender, EventArgs e)
         {
             var addEditEmployee = new AddEditEmployee();
+            addEditEmployee.FormClosing += AddEditEmployee_FormClosing;
             addEditEmployee.ShowDialog();
+        }
+
+        private void AddEditEmployee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            RefreshDiary();
         }
 
         private void btEdit_Click(object sender, EventArgs e)

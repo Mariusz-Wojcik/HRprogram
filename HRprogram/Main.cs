@@ -12,9 +12,17 @@ namespace HRprogram
 {
     public partial class Main : Form
     {
+        private FileHelper<List<Employee>> _fileHelper = new FileHelper<List<Employee>>(Program.FilePath);
         public Main()
         {
             InitializeComponent();
+            RefreshDiary();
+        }
+
+        private void RefreshDiary()
+        {
+            var employees = _fileHelper.DeserializeFromFile();         
+            dgvMain.DataSource = employees;
         }
 
         private void btAdd_Click(object sender, EventArgs e)

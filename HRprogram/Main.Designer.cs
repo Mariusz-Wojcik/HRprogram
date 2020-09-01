@@ -33,9 +33,9 @@
             this.btFire = new System.Windows.Forms.Button();
             this.btDelate = new System.Windows.Forms.Button();
             this.cbbFilter = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMain = new System.Windows.Forms.DataGridView();
             this.btRefresh = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.SuspendLayout();
             // 
             // btAdd
@@ -90,13 +90,13 @@
             this.cbbFilter.Size = new System.Drawing.Size(121, 21);
             this.cbbFilter.TabIndex = 4;
             // 
-            // dataGridView1
+            // dgvMain
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 397);
-            this.dataGridView1.TabIndex = 5;
+            this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain.Location = new System.Drawing.Point(12, 41);
+            this.dgvMain.Name = "dgvMain";
+            this.dgvMain.Size = new System.Drawing.Size(776, 397);
+            this.dgvMain.TabIndex = 5;
             // 
             // btRefresh
             // 
@@ -105,7 +105,7 @@
             this.btRefresh.Name = "btRefresh";
             this.btRefresh.Size = new System.Drawing.Size(75, 23);
             this.btRefresh.TabIndex = 6;
-            this.btRefresh.Text = "Odświerz";
+            this.btRefresh.Text = "Odśwież";
             this.btRefresh.UseVisualStyleBackColor = false;
             this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
@@ -115,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btRefresh);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMain);
             this.Controls.Add(this.cbbFilter);
             this.Controls.Add(this.btDelate);
             this.Controls.Add(this.btFire);
@@ -123,7 +123,7 @@
             this.Controls.Add(this.btAdd);
             this.Name = "Main";
             this.Text = "Kadry";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -135,7 +135,7 @@
         private System.Windows.Forms.Button btFire;
         private System.Windows.Forms.Button btDelate;
         private System.Windows.Forms.ComboBox cbbFilter;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMain;
         private System.Windows.Forms.Button btRefresh;
     }
 }

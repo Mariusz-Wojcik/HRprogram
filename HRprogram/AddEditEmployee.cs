@@ -14,10 +14,14 @@ namespace HRprogram
     public partial class AddEditEmployee : Form
     {
         private int _employeeId;
+        private Employee _employee;
         private FileHelper<List<Employee>> _fileHelper = new FileHelper<List<Employee>>(Program.FilePath);
-        public AddEditEmployee()
+        public AddEditEmployee(int id = 0)
         {
             InitializeComponent();
+            _employeeId = id;
+            GetEmployeeData();
+
         }
 
         private void btConfirm_Click(object sender, EventArgs e)
@@ -61,6 +65,32 @@ namespace HRprogram
         private void btCancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void GetEmployeeData()
+        {
+            if (_employeeId != 0)
+            {
+                Text = "Edytowanie danych pracownika";
+                var students = _fileHelper.DeserializeFromFile();
+                _employee = students.FirstOrDefault(x => x.Id == _employeeId);
+
+                if (_employee == null)
+
+                    throw new Exception("Brak pracownika o podanym Id");
+
+                FillTextBoxes();
+            }
+        }
+        private void FillTextBoxes()
+        {
+            tbId.Text = _employee.Id.ToString();
+            tbFirstName.Text = _employee.FirstName;
+            tbLastName.Text = _employee.LastName;
+            tbHireDate.Text = _employee.HireDate;
+            tbFireDate.Text = _employee.FireDate;
+            tbSalary.Text = _employee.Salary.ToString();
+            rtbRemarks.Text = _employee.Remarks;
         }
     }
 }

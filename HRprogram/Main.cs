@@ -42,7 +42,15 @@ namespace HRprogram
 
         private void btEdit_Click(object sender, EventArgs e)
         {
+            if (dgvMain.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Zaznacz pracownika którego dane chcesz edytować");
+                return;
+            }
 
+            var addEditEmployee = new AddEditEmployee(Convert.ToInt32(dgvMain.SelectedRows[0].Cells[0].Value));
+            addEditEmployee.FormClosing += AddEditEmployee_FormClosing;
+            addEditEmployee.ShowDialog();
         }
 
         private void btFire_Click(object sender, EventArgs e)
@@ -62,7 +70,7 @@ namespace HRprogram
             var confirmDelete =
                 MessageBox.Show($"Czy na pewno chcesz usunąć pracownika " +
                 $"{(selectedEmployee.Cells[1].Value.ToString() + " " + selectedEmployee.Cells[2].Value.ToString()).Trim()}",
-                "Usuwanie ucznia",
+                "Usuwanie pracownika",
                 MessageBoxButtons.OKCancel);
 
             if (confirmDelete == DialogResult.OK)

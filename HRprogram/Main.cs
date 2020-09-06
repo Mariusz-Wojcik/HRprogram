@@ -7,22 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace HRprogram
 {
     public partial class Main : Form
     {
         private FileHelper<List<Employee>> _fileHelper = new FileHelper<List<Employee>>(Program.FilePath);
+
         public Main()
         {
-            InitializeComponent();           
+            InitializeComponent();
             RefreshDiary();
             SetColumnHeader();
         }
 
         private void RefreshDiary()
         {
-            var employees = _fileHelper.DeserializeFromFile();         
+            var employees = _fileHelper.DeserializeFromFile();
             dgvMain.DataSource = employees;
         }
 
@@ -55,6 +57,10 @@ namespace HRprogram
 
         private void btFire_Click(object sender, EventArgs e)
         {
+            
+            var fireEmployee = new FireEmployee(Convert.ToInt32(dgvMain.SelectedRows[0].Cells[0].Value));
+
+            RefreshDiary();
 
         }
 

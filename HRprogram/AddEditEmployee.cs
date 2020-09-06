@@ -72,8 +72,8 @@ namespace HRprogram
             if (_employeeId != 0)
             {
                 Text = "Edytowanie danych pracownika";
-                var students = _fileHelper.DeserializeFromFile();
-                _employee = students.FirstOrDefault(x => x.Id == _employeeId);
+                var employee = _fileHelper.DeserializeFromFile();
+                _employee = employee.FirstOrDefault(x => x.Id == _employeeId);
 
                 if (_employee == null)
 

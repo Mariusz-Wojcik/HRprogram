@@ -52,7 +52,24 @@ namespace HRprogram
 
         private void btDelate_Click(object sender, EventArgs e)
         {
+            if (dgvMain.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Zaznacz pracownika którego dane chcesz usunąć");
+                return;
+            }
 
+            var selectedEmployee = dgvMain.SelectedRows[0];
+            var confirmDelete =
+                MessageBox.Show($"Czy na pewno chcesz usunąć pracownika " +
+                $"{(selectedEmployee.Cells[1].Value.ToString() + " " + selectedEmployee.Cells[2].Value.ToString()).Trim()}",
+                "Usuwanie ucznia",
+                MessageBoxButtons.OKCancel);
+
+            if (confirmDelete == DialogResult.OK)
+            {
+                DeleteEmployee(Convert.ToInt32(selectedEmployee.Cells[0].Value));
+                RefreshDiary();
+            }
         }
 
         private void btRefresh_Click(object sender, EventArgs e)
@@ -70,6 +87,14 @@ namespace HRprogram
             dgvMain.Columns[5].HeaderText = "Pensja";
             dgvMain.Columns[6].HeaderText = "Uwagi";
         }
+
+        private void DeleteEmployee(int id)
+        {
+            var employees = _fileHelper.DeserializeFromFile();
+            employees.RemoveAll(x => x.Id == id);
+            _fileHelper.SerializeToFile(employees);
+        }
+
 
     }
 }
